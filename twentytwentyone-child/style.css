@@ -1,0 +1,333 @@
+/*
+Theme Name: Twenty Twenty-One child
+Theme URI: https://www.thenotsomiserable.co.uk/
+Author: Rosie Hart
+Author URI: https://www.thenotsomiserable.co.uk
+Description: Twenty Twenty-One child theme
+Template: twentytwentyone
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyonechild
+Tags:
+
+*/
+
+/*** Typography ***/
+
+* {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  padding: 0.25em 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+
+/*** Colours ***/
+
+:root {
+  --white: #FFFFFF;
+  --purple: #604BD8;
+  --purple-2: #342C67;
+  --purple-3: #291B64;
+  --purple-4: #1D153C;
+  --grey: #291B6433;
+  --grey-2: #00000029;
+  --grey-3: #626262;
+  --black: #000000;
+  --lime: #CFFF4D;
+}
+
+/*** Structure ***/
+
+#page {
+  background-color: var(--white);
+}
+
+#content {
+  max-width: 1400px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.entry-content {
+  margin: 0;
+  padding: 0;
+}
+
+.site-main {
+  padding-top: 0;
+}
+
+/*** Header ***/
+
+.site-header {
+  background: no-repeat padding-box;
+  background-color: var(--white);
+  filter: drop-shadow(0px 3px 20px var(--grey-2));
+  height: 92px;
+  max-width: 1400px;
+  opacity: 1;
+}
+
+header #masthead {
+  top: 23px;
+  left: 52px;
+  width: 117px;
+  height: 46px;
+}
+
+header #masthead p a {
+  color: var(--purple);
+  font: normal normal 800 20px/17px Heebo;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+header.site-header {
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+
+.site-branding {
+  align-content: flex-start;
+  margin-left: 52px;
+  width: 117px;
+  text-align: left;
+}
+
+.site-branding p a {
+  font-size: 20px;
+  color: var(--purple);
+}
+
+nav.demo-menu{
+  width: 50%;
+}
+
+#menu-button {
+  align-content: flex-end;
+  float: right;
+}
+
+.demo-menu ul {
+  float: right;
+}
+
+.demo-menu ul li {
+  display: inline;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+nav.demo-menu ul li a {
+  text-decoration: none;
+}
+
+
+/*Hide site description*/
+.site-description {
+  display: none;
+}
+
+/*** Page heading ***/
+
+.row-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+header.row-container {
+  max-height: 600px;
+}
+
+.header-text-container {
+  width: 50%;
+  min-width: 250px;
+  background: transparent linear-gradient(133deg, #604BD8 0%, #342C67 100%) 0% 0% no-repeat padding-box;
+}
+
+
+@media (max-width: 768px) {
+  .header-text-container {
+    width: 100%;
+  }
+
+  .header-image-container {
+    display: none;
+  }
+}
+
+.header-text {
+  margin: 20%;
+}
+
+.header-image {
+  object-fit: cover;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+.header-image-container {
+  width: 50%;
+}
+
+h2.front-page-subtitle {
+ color: var(--lime);
+ font-size: 22px;
+}
+
+h1.front-page-title {
+  color: var(--white);
+  font-size: 50px;
+}
+
+p.front-page-summary {
+  color: var(--white);
+  font-size: 22px;
+}
+
+/*remove unnecessary divide between page header and content */
+.singular .entry-header {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*** Footer ***/
+
+
+/*** Buttons ***/
+
+.cta-button {
+  margin: 20px 0;
+  padding: 7px 37px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.cta-button-header {
+  border: solid 2px var(--lime);
+  opacity: 1;
+}
+
+.button-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cta-button-main {
+  background: linear-gradient(180deg, #604BD8 0%, #342C67 100%);
+}
+
+.cta-button-inverse {
+  border: solid 2px var(--purple-2);
+  opacity: 1;
+}
+
+.cat-button-inverse p a {
+  color: var(--purple-2);
+}
+
+.cta-button-header p a {
+  color: var(--white);
+}
+
+.cta-button-main p a {
+  color: var(--white);
+}
+
+.cta-button p, .cta-button a {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*** Column content ***/
+
+.container-two-columns {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 20px;
+  width: 100%;
+}
+
+.column-text {
+  width: 40%;
+}
+
+.column-image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.column-image img {
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .colummn-text, .column-image {
+    width: 100%;
+  }
+
+  .column-image {
+    text-align: center;
+  }
+
+  .column-image img {
+    margin: 20px;
+    width: 60%;
+  }
+
+  .container-two-columns {
+    flex-direction: column;
+    border-bottom: solid 1px var(--grey-3);
+  }
+
+  .container-two-columns:last-child {
+    border-bottom: none;
+  }
+
+  .button-area {
+    align-items: center;
+    display: inline;
+  }
+
+  .cta-button {
+    margin: 20px auto;
+  }
+}
